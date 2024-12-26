@@ -1,0 +1,30 @@
+[project]
+name = "k8s-schema-merger"
+version = "0.1.0"
+description = "Merge built-in K8s and CRD schemas for yamlls"
+authors = [{ name = "Funk66" }]
+requires-python = ">=3.12"
+dependencies = ["kubernetes==30.1.0"]
+readme = "README.md"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+[dependency-groups]
+dev = [
+  "build>=1.2.2.post1",
+  "kubernetes-stubs @ git+https://github.com/kialo/kubernetes-stubs.git@30.1.0",
+]
+
+[project.scripts]
+k8s-schema-merger = "k8s_schema_merger.cli:main"
+
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project.urls]
+"Homepage" = "https://github.com/funk66/k8s-schema-merger"
+"Bug Tracker" = "https://github.com/funk66/k8s-schema-merger/issues"
