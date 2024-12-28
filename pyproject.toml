@@ -1,6 +1,6 @@
 [project]
 name = "k8s-schema-merger"
-version = "0.1.0"
+version = "0.1.1"
 description = "Merge built-in K8s and CRD schemas for yamlls"
 authors = [{ name = "Funk66" }]
 requires-python = ">=3.12"
