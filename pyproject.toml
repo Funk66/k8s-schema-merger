@@ -1,10 +1,10 @@
 [project]
 name = "k8s-schema-merger"
-version = "0.1.1"
+version = "0.1.2"
 description = "Merge built-in K8s and CRD schemas for yamlls"
 authors = [{ name = "Funk66" }]
 requires-python = ">=3.12"
-dependencies = ["kubernetes==30.1.0"]
+dependencies = ["kubernetes==33.1.0"]
 readme = "README.md"
 classifiers = [
   "Programming Language :: Python :: 3",
@@ -15,7 +15,7 @@ classifiers = [
 [dependency-groups]
 dev = [
   "build>=1.2.2.post1",
-  "kubernetes-stubs @ git+https://github.com/kialo/kubernetes-stubs.git@30.1.0",
+  "kubernetes-stubs @ git+https://github.com/kialo/kubernetes-stubs.git@33.1.0",
 ]
 
 [project.scripts]
